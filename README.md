@@ -10,16 +10,29 @@
  Lagrange proved that any positive integer can be expressed as the sum of at most 4 positive perfect squares. For example:
 
  1 = 1
+ 
  2 = 1 + 1
+ 
  3 = 1 + 1 + 1
+ 
  4 = 4
+ 
  5 = 4 + 1
+ 
  6 = 4 + 1 + 1
+ 
  7 = 4 + 1 + 1 + 1
+ 
  8 = 4 + 4
+ 
  9 = 9
+ 
  10 = 9 + 1
+ 
  11 = 9 + 1 + 1
+ 
  12 = 9 + 1 + 1 + 1
+ 
  13 = 9 + 4
+ 
  14 = 9 + 4 + 1
