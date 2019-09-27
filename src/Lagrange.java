@@ -63,28 +63,38 @@ public class Lagrange {
 	 */
 	public boolean findSumRB(int num, int maxTerms) {
 		
-		if (num == 0 && maxTerms==0) {
+		if (num == 0) {
 			return true;
 		}
 
+		if (maxTerms == 0) {
+			return false;
+		}
+
 		int sum = largestSquare(num);
-		
-		if(num==23 && maxTerms==4) {
-			sum = largestSquare(sum-1);
-		}
-		if(num==19 && maxTerms==3) {
-			sum = largestSquare(sum-1);
-		}
-		
+
 		this.terms[4 - (maxTerms)] = sum;
-		maxTerms--;
-		num = num - sum;
-		
-		if (this.findSumRB((num), maxTerms)) {
+		// System.out.println("" + Arrays.toString(this.terms));
+
+		num = num - this.terms[4 - (maxTerms)];
+		if (this.findSumRB((num), --maxTerms)) { // recursive call (backtrack)
 			return true;
+		} else {
+			sum = largestSquare(sum - 1);
+			if (sum <= 1) {
+				return false;
+			} else {
+				this.terms[4 - (maxTerms) - 1] = sum;
+				// System.out.println("" + Arrays.toString(this.terms));
+				int num1 = 0;
+				for (int i = 0; i < (4 - maxTerms); i++) {
+					num1 = num1 + this.terms[i];
+				}
+				num1 = number - num1;
+
+				return this.findSumRB((num1), maxTerms);
+			}
 		}
-		
-		return false;
 	}
 
 	public static void main(String[] args) {
