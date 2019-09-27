@@ -3,9 +3,9 @@
 
  A perfect square is an integer than can be written as the square of another integer. For example:
 
- 25 is a perfect square, because it is the square of 5 (i.e., 5² = 25)
+ • 25 is a perfect square, because it is the square of 5 (i.e., 5² = 25)
 
- 64 is a perfect square, because it is the square of 8 (i.e., 8² = 64)
+ • 64 is a perfect square, because it is the square of 8 (i.e., 8² = 64)
 
  Lagrange proved that any positive integer can be expressed as the sum of at most 4 positive perfect squares. For example:
 
