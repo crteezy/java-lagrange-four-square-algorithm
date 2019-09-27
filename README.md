@@ -1,5 +1,4 @@
-# java-lagrange-four-square-algorithm
- Lagrange's four-square theorem
+# Lagrange's four-square theorem with recursion
 
  A perfect square is an integer than can be written as the square of another integer. For example:
 
